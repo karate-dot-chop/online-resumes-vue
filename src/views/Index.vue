@@ -12,6 +12,7 @@ export default {
   data: function () {
     return {
       message: "Here is a list of all students!",
+      students: [],
     };
   },
   created: function () {},
