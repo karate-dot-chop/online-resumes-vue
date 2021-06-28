@@ -24,11 +24,12 @@
       <div class="inner">
         <h2>Menu</h2>
         <ul>
+          <!-- Add Router Link elements to link to .vue pages -->
           <li>Home</li>
-          <li><a href="generic.html">Ipsum veroeros</a></li>
-          <li><a href="generic.html">Tempus etiam</a></li>
-          <li><a href="generic.html">Consequat dolor</a></li>
-          <li><a href="elements.html">Elements</a></li>
+          <li>Ipsum veroeros</li>
+          <li>Tempus etiam</li>
+          <li>Consequat dolor</li>
+          <li>Elements</li>
         </ul>
       </div>
     </nav>
