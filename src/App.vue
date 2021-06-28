@@ -5,34 +5,13 @@
     <header id="header">
       <div class="inner">
         <!-- Logo -->
-        <a href="index.html" class="logo">
-          <span class="symbol"><img src="images/logo.svg" alt="" /></span
-          ><span class="title">Phantom</span>
-        </a>
-
-        <!-- Nav -->
-        <nav>
-          <ul>
-            <li><a href="#menu">Menu</a></li>
-          </ul>
-        </nav>
+        <router-link to="/" class="logo">
+          <span class="symbol"
+            ><img src="images/karate-chop.jpeg" alt="" /></span
+          ><span class="title">Students</span>
+        </router-link>
       </div>
     </header>
-
-    <!-- Menu -->
-    <nav id="menu">
-      <div class="inner">
-        <h2>Menu</h2>
-        <ul>
-          <!-- Add Router Link elements to link to .vue pages -->
-          <li>Home</li>
-          <li>Ipsum veroeros</li>
-          <li>Tempus etiam</li>
-          <li>Consequat dolor</li>
-          <li>Elements</li>
-        </ul>
-      </div>
-    </nav>
 
     <router-view />
 
