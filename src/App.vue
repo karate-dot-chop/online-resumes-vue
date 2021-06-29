@@ -15,44 +15,65 @@
 
       <router-view />
 
-    <!-- Footer -->
-    <footer id="footer">
-      <section>
-        <h2>Connect</h2>
-        <ul class="icons">
+      <!-- Footer -->
+      <footer id="footer">
+        <section>
+          <h2>Connect</h2>
+          <ul class="icons">
+            <li>
+              <a
+                href="https://www.github.com/NAME"
+                target="_blank"
+                class="icon brands style2 fa-github"
+              >
+                <span class="label">Github</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/NAME"
+                target="_blank"
+                class="icon brands style2 fa-linkedin"
+              >
+                <span class="label">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/in/NAME"
+                target="_blank"
+                class="icon brands style2 fa-facebook-f"
+              >
+                <span class="label">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.NAME.com"
+                target="_blank"
+                class="icon solid style2 fa-laptop"
+              >
+                <span class="label">Website</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:NAME@gmail.com"
+                class="icon solid style2 fa-envelope"
+                ><span class="label">Email</span></a
+              >
+            </li>
+          </ul>
+        </section>
+        <ul class="copyright">
+          <li>&copy; karate(dot)chop</li>
           <li>
-            <a href="https://www.github.com/NAME" target="_blank" class="icon brands style2 fa-github">
-              <span class="label">Github</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/NAME" target="_blank" class="icon brands style2 fa-linkedin">
-              <span class="label">LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/in/NAME" target="_blank" class="icon brands style2 fa-facebook-f">
-              <span class="label">Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.NAME.com" target="_blank" class="icon solid style2 fa-laptop">
-              <span class="label">Website</span>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:NAME@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a>
+            Design:
+            <a href="http://html5up.net">HTML5 UP</a>
           </li>
         </ul>
-      </section>
-      <ul class="copyright">
-        <li>&copy; karate(dot)chop</li>
-        <li>
-          Design:
-          <a href="http://html5up.net">HTML5 UP</a>
-        </li>
-      </ul>
-    </footer>
+      </footer>
+    </div>
   </div>
 </template>
 
