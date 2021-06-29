@@ -22,11 +22,17 @@
     Github:
     <p>{{ github_url }}</p>
     <!-- education may want to change formatting by removing headers depending on layout -->
-    <div v-for="(education, index) in student.educations" v-bind:key="education.id">
+    <div
+      v-for="(education, index) in student.educations"
+      v-bind:key="education.id"
+    >
       School:
       <p>{{ student.educations[index].university_name }}</p>
       Dates Attended:
-      <p>{{ student.educations[index].start_date }} - {{ student.educations[index].end_date }}</p>
+      <p>
+        {{ student.educations[index].start_date }} -
+        {{ student.educations[index].end_date }}
+      </p>
       Degree Earned:
       <p>{{ student.educations[index].degree }}</p>
       Details:
