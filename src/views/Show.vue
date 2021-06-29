@@ -39,14 +39,32 @@
       <p>{{ student.educations[index].details }}</p>
     </div>
     <!-- experience may want to change formatting by removing headers depending on layout front end serializer not done may need to change-->
-    <div
-      v-for="(experince, index) in student.experinces"
-      v-bind:key="experince.id"
-    >
+    <div v-for="(experience, index) in student.experiences" v-bind:key="experience.id">
       Company:
-      {{ student.experinces[index].company_name }}
+      <p>{{ student.experiences[index].company_name }}</p>
+      Title:
+      <p>{{ student.experiences[index].job_title }}</p>
       Dates Worked:
-      {{ student.experinces[index].start_date }}
+      <p>{{ student.experiences[index].start_date }} - {{ student.experiences[index].end_date }}</p>
+      Details:
+      <p>{{ student.experiences[index].details }}</p>
+    </div>
+    <!-- skills may want to change formatting by removing headers depending on layout-->
+    Skills:
+    <div v-for="(skill, index) in student.skills" v-bind:key="skill.id">
+      <p>{{ student.skills[index].name }}</p>
+    </div>
+    <!-- capstones may want to change formatting on headers depending on layout -->
+    Projects:
+    <div v-for="(capstone, index) in student.capstones" v-bind:key="capstone.id">
+      Name:
+      <p>{{ student.capstones[index].name }}</p>
+      Description:
+      <p>{{ student.capstones[index].description }}</p>
+      Website:
+      <p>{{ student.capstones[index].url }}</p>
+      Screenshot:
+      <p>{{ student.capstones[index].screenshot }}</p>
     </div>
   </div>
 </template>
@@ -58,7 +76,7 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      student: { education: {}, experince: {} },
+      student: { education: {}, experience: {}, skill: {}, capstone: {} },
     };
   },
   created: function () {
