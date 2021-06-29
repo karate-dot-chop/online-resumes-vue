@@ -859,11 +859,11 @@ hr.major {
   }
 
   .row.gtr-uniform {
-    margin-top: -2em;
+    margin-top: 0em;
   }
 
   .row.gtr-uniform > * {
-    padding-top: 2em;
+    padding-top: 0.5em;
   }
 
   .row.gtr-150 {
@@ -2148,7 +2148,7 @@ ul.icons li {
 /* Form */
 
 form {
-  margin: 0 0 2em 0;
+  margin: 0 0 0 0;
   overflow-x: hidden;
 }
 
@@ -2848,7 +2848,7 @@ body:not(.is-touch) .tiles article:hover .content {
 }
 
 * + .tiles {
-  margin-top: 2em;
+  margin-top: 5px;
 }
 
 body.is-preload .tiles article {
@@ -2866,7 +2866,7 @@ body.is-touch .tiles article .content {
 
 @media screen and (max-width: 1280px) {
   .tiles {
-    margin: -1.25em 0 0 -1.25em;
+    margin: 0 0 0 -1.25em;
   }
 
   .tiles article {
@@ -2877,7 +2877,7 @@ body.is-touch .tiles article .content {
 
 @media screen and (max-width: 980px) {
   .tiles {
-    margin: -2.5em 0 0 -2.5em;
+    margin: 0 0 0 -2.5em;
   }
 
   .tiles article {
@@ -2888,7 +2888,7 @@ body.is-touch .tiles article .content {
 
 @media screen and (max-width: 736px) {
   .tiles {
-    margin: -1.25em 0 0 -1.25em;
+    margin: 0 0 0 -1.25em;
   }
 
   .tiles article {
@@ -2918,7 +2918,7 @@ body.is-touch .tiles article .content {
 /* Header */
 
 #header {
-  padding: 8em 0 0.1em 0;
+  padding: 2.5em 0 0.1em 0;
 }
 
 #header .logo {
@@ -2927,7 +2927,7 @@ body.is-touch .tiles article .content {
   color: inherit;
   font-weight: 900;
   letter-spacing: 0.35em;
-  margin: 0 0 2.5em 0;
+  margin: 0 0 1em 0;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;

@@ -22,22 +22,31 @@
     Github:
     <p>{{ github_url }}</p>
     <!-- education may want to change formatting by removing headers depending on layout -->
-    <div v-for="(education, index) in student.educations" v-bind:key="education.id">
+    <div
+      v-for="(education, index) in student.educations"
+      v-bind:key="education.id"
+    >
       School:
       <p>{{ student.educations[index].university_name }}</p>
       Dates Attended:
-      <p>{{ student.educations[index].start_date }} - {{ student.educations[index].end_date }}</p>
+      <p>
+        {{ student.educations[index].start_date }} -
+        {{ student.educations[index].end_date }}
+      </p>
       Degree Earned:
       <p>{{ student.educations[index].degree }}</p>
       Details:
       <p>{{ student.educations[index].details }}</p>
     </div>
     <!-- experience may want to change formatting by removing headers depending on layout front end serializer not done may need to change-->
-    <div v-for="(experince, index) in student.experinces" v-bind:key="experince.id">
+    <div
+      v-for="(experince, index) in student.experinces"
+      v-bind:key="experince.id"
+    >
       Company:
       {{ student.experinces[index].company_name }}
       Dates Worked:
-      {{ student.experinces[index]. }}
+      {{ student.experinces[index].start_date }}
     </div>
   </div>
 </template>
