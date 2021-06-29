@@ -7,7 +7,7 @@
 <style></style>
 
 <script>
-// import axios from "axios";
+import axios from "axios";
 export default {
   data: function () {
     return {
@@ -15,7 +15,12 @@ export default {
       students: [],
     };
   },
-  created: function () {},
+  created: function () {
+    axios.get("/students").then((response) => {
+      console.log("All students:", response.data);
+      this.students = response.data;
+    });
+  },
   methods: {},
 };
 </script>
