@@ -2,13 +2,16 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Index from "../views/Index.vue";
 import Show from "../views/Show.vue";
+import Vue2Filters from "vue2-filters";
+
+Vue.use(Vue2Filters);
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "index",
+    path: "/students",
+    name: "students-index",
     component: Index,
   },
   {

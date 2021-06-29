@@ -5,7 +5,7 @@
       <header id="header">
         <div class="inner">
           <!-- Logo -->
-          <router-link to="/" class="logo">
+          <router-link to="/students" class="logo">
             <span class="symbol"
               ><img src="images/karate-chop.jpeg" alt="" /></span
             ><span class="title">Students</span>
