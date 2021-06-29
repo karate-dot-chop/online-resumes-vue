@@ -21,7 +21,7 @@ const routes = [
     name: "twitter",
     component: Twitter,
   },
-{
+  {
     path: "/students/:id",
     name: "student-show",
     component: Show,
