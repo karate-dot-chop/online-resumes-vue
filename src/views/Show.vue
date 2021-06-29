@@ -39,13 +39,19 @@
       <p>{{ student.educations[index].details }}</p>
     </div>
     <!-- experience may want to change formatting by removing headers depending on layout front end serializer not done may need to change-->
-    <div v-for="(experience, index) in student.experiences" v-bind:key="experience.id">
+    <div
+      v-for="(experience, index) in student.experiences"
+      v-bind:key="experience.id"
+    >
       Company:
       <p>{{ student.experiences[index].company_name }}</p>
       Title:
       <p>{{ student.experiences[index].job_title }}</p>
       Dates Worked:
-      <p>{{ student.experiences[index].start_date }} - {{ student.experiences[index].end_date }}</p>
+      <p>
+        {{ student.experiences[index].start_date }} -
+        {{ student.experiences[index].end_date }}
+      </p>
       Details:
       <p>{{ student.experiences[index].details }}</p>
     </div>
@@ -56,7 +62,10 @@
     </div>
     <!-- capstones may want to change formatting on headers depending on layout -->
     Projects:
-    <div v-for="(capstone, index) in student.capstones" v-bind:key="capstone.id">
+    <div
+      v-for="(capstone, index) in student.capstones"
+      v-bind:key="capstone.id"
+    >
       Name:
       <p>{{ student.capstones[index].name }}</p>
       Description:
@@ -66,6 +75,64 @@
       Screenshot:
       <p>{{ student.capstones[index].screenshot }}</p>
     </div>
+    <!-- Footer -->
+    <footer id="footer">
+      <section>
+        <h2>Connect</h2>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.github.com/NAME"
+              target="_blank"
+              class="icon brands style2 fa-github"
+            >
+              <span class="label">Github</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/NAME"
+              target="_blank"
+              class="icon brands style2 fa-linkedin"
+            >
+              <span class="label">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/in/NAME"
+              target="_blank"
+              class="icon brands style2 fa-facebook-f"
+            >
+              <span class="label">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.NAME.com"
+              target="_blank"
+              class="icon solid style2 fa-laptop"
+            >
+              <span class="label">Website</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:NAME@gmail.com"
+              class="icon solid style2 fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+      </section>
+      <ul class="copyright">
+        <li>&copy; karate(dot)chop</li>
+        <li>
+          Design:
+          <a href="http://html5up.net">HTML5 UP</a>
+        </li>
+      </ul>
+    </footer>
   </div>
 </template>
 
