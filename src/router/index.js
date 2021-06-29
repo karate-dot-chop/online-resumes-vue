@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Index from "../views/Index.vue";
-// import Show from "../views/Show.vue";
+import Show from "../views/Show.vue";
 
 Vue.use(VueRouter);
 
@@ -11,11 +11,11 @@ const routes = [
     name: "index",
     component: Index,
   },
-  // {
-  //   path: "/show",
-  //   name: "student-show",
-  //   component: Show,
-  // },
+  {
+    path: "/students/:id",
+    name: "student-show",
+    component: Show,
+  },
 ];
 
 const router = new VueRouter({
