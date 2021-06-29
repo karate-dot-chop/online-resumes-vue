@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <div id="wrapper"></div>
-    <!-- Header -->
-    <header id="header">
-      <div class="inner">
-        <!-- Logo -->
-        <router-link to="/" class="logo">
-          <span class="symbol"><img src="images/karate-chop.jpeg" alt="" /></span>
-          <span class="title">Students</span>
-        </router-link>
-      </div>
-    </header>
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <!-- Logo -->
+          <router-link to="/students" class="logo">
+            <span class="symbol"
+              ><img src="images/karate-chop.jpeg" alt="" /></span
+            ><span class="title">Students</span>
+          </router-link>
+        </div>
+      </header>
 
-    <router-view />
+      <router-view />
 
     <!-- Footer -->
     <footer id="footer">

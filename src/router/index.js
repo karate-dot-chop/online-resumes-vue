@@ -3,13 +3,17 @@ import VueRouter from "vue-router";
 import Index from "../views/Index.vue";
 import Twitter from "../views/Twitter.vue";
 // import Show from "../views/Show.vue";
+import Show from "../views/Show.vue";
+import Vue2Filters from "vue2-filters";
+
+Vue.use(Vue2Filters);
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "index",
+    path: "/students",
+    name: "students-index",
     component: Index,
   },
   {
@@ -17,11 +21,11 @@ const routes = [
     name: "twitter",
     component: Twitter,
   },
-  // {
-  //   path: "/show",
-  //   name: "student-show",
-  //   component: Show,
-  // },
+{
+    path: "/students/:id",
+    name: "student-show",
+    component: Show,
+  },
 ];
 
 const router = new VueRouter({
