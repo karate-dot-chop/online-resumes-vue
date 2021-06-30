@@ -5,7 +5,9 @@
     <img :src="student.photo_url" alt="" />
     <br />
     Email:
-    <p>{{ student.email }}</p>
+    <a :href="`mailto:${student.email}`">{{ student.email }}</a>
+    <br />
+    <br />
     Phone Number:
     <p>{{ student.phone_number }}</p>
     Biography:
@@ -69,33 +71,42 @@
       <br />
       <img :src="`${student.capstones[index].screenshot}`" alt="" />
     </div>
+    <!-- Twitterer -->
+
+    <template>
+      <div>
+        <TwitterFeed
+          :src="`https://twitter.com/${student.twitter_handle}`"
+          data-width="300"
+          data-height="400"
+        ></TwitterFeed>
+      </div>
+    </template>
+
     <!-- Footer -->
     <footer id="footer">
       <section>
         <h2>Connect</h2>
         <ul class="icons">
           <li>
-            <a href="https://www.github.com/NAME" target="_blank" class="icon brands style2 fa-github">
+            <a href="https://www.github.com/karate-dot-chop" target="_blank" class="icon brands style2 fa-github">
               <span class="label">Github</span>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/NAME" target="_blank" class="icon brands style2 fa-linkedin">
+            <a :href="`${student.linkedin_url}`" target="_blank" class="icon brands style2 fa-linkedin">
               <span class="label">LinkedIn</span>
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/in/NAME" target="_blank" class="icon brands style2 fa-facebook-f">
-              <span class="label">Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.NAME.com" target="_blank" class="icon solid style2 fa-laptop">
+            <a :href="`${student.personal_url}`" target="_blank" class="icon solid style2 fa-laptop">
               <span class="label">Website</span>
             </a>
           </li>
           <li>
-            <a href="mailto:NAME@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a>
+            <a :href="`mailto:${student.email}`" target="_blank" class="icon solid style2 fa-envelope">
+              <span class="label">Email</span>
+            </a>
           </li>
         </ul>
       </section>
