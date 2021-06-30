@@ -5,7 +5,9 @@
     <img :src="student.photo_url" alt="" />
     <br />
     Email:
-    <p>{{ student.email }}</p>
+    <a :href="`mailto:${student.email}`">{{ student.email }}</a>
+    <br />
+    <br />
     Phone Number:
     <p>{{ student.phone_number }}</p>
     Biography:
@@ -82,6 +84,18 @@
       <br />
       <img :src="`${student.capstones[index].screenshot}`" alt="" />
     </div>
+    <!-- Twitterer -->
+
+    <template>
+      <div>
+        <TwitterFeed
+          :src="`https://twitter.com/${student.twitter_handle}`"
+          data-width="300"
+          data-height="400"
+        ></TwitterFeed>
+      </div>
+    </template>
+
     <!-- Footer -->
     <footer id="footer">
       <section>
@@ -89,7 +103,7 @@
         <ul class="icons">
           <li>
             <a
-              href="https://www.github.com/NAME"
+              href="https://www.github.com/karate-dot-chop"
               target="_blank"
               class="icon brands style2 fa-github"
             >
@@ -98,7 +112,7 @@
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/NAME"
+              :href="`${student.linkedin_url}`"
               target="_blank"
               class="icon brands style2 fa-linkedin"
             >
@@ -107,16 +121,7 @@
           </li>
           <li>
             <a
-              href="https://www.facebook.com/in/NAME"
-              target="_blank"
-              class="icon brands style2 fa-facebook-f"
-            >
-              <span class="label">Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.NAME.com"
+              :href="`${student.personal_url}`"
               target="_blank"
               class="icon solid style2 fa-laptop"
             >
@@ -125,10 +130,12 @@
           </li>
           <li>
             <a
-              href="mailto:NAME@gmail.com"
+              :href="`mailto:${student.email}`"
+              target="_blank"
               class="icon solid style2 fa-envelope"
-              ><span class="label">Email</span></a
             >
+              <span class="label">Email</span>
+            </a>
           </li>
         </ul>
       </section>
